@@ -1,0 +1,25 @@
+<!-- 
+Task 2 Sign-In view
+Task Lead: Isabella Steinauer 
+Task 2nd: William Taylor
+-->
+
+<html>
+
+<body>
+    <!-- 
+    action section is where this data is being sent
+    function Validation() is to be completed in task 5
+    -->
+    <form action="/submit" method="post" onsubmit="return Validation()">
+        <label for="employeeID">Employee ID:</label>
+        <input type="number" id="employeeID" name="employeeID" required="required" pattern="[A-Za-z0-9]{1,20}">
+        <br><br>
+        <label for="employeePswd">Password:</label>
+        <input type="password" id="employeePswd" name="employeePswd" required="required" pattern="[A-Za-z0-9]{1,20}">
+        <br><br>
+        <input type="submit" value="Sign In">
+    </form>
+</body>
+
+</html>
